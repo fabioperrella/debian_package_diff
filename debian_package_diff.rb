@@ -10,9 +10,9 @@ def main
   version2 = ARGV[2]
 
   puts "comparando pacote #{package_name} #{version1} e #{version2}"
+  remove_packages
   download_packages(package_name, version1, version2)
   compare_packages(package_name, version1, version2)
-  remove_packages
 
   puts "fim"
 end
